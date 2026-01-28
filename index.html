@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección Creativa para WordPress</title>
+</head>
+<body>
+
+    <!-- COPIA DESDE AQUÍ PARA WORDPRESS -->
+    
+    <style>
+        /* Estilos encapsulados para evitar conflictos con tu tema */
+        .custom-section-container {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            padding: 80px 20px;
+            background-color: #f9fbfd; /* Color de fondo suave */
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        .custom-section-container * {
+            box-sizing: border-box;
+        }
+
+        .custom-section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px auto;
+        }
+
+        .custom-section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #1a202c;
+            line-height: 1.2;
+        }
+
+        .custom-section-header h2 span {
+            color: #4f46e5; /* Color de acento (Azul Indigo) */
+            position: relative;
+            display: inline-block;
+        }
+        
+        /* Subrayado creativo */
+        .custom-section-header h2 span::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 8px;
+            bottom: 5px;
+            left: 0;
+            background-color: #4f46e5;
+            opacity: 0.2;
+            z-index: -1;
+            border-radius: 4px;
+        }
+
+        .custom-section-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* Grid de Tarjetas */
+        .custom-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .custom-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: left;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* Efecto Hover Creativo */
+        .custom-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: #4f46e5;
+        }
+
+        .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            background-color: #e0e7ff;
+            color: #4f46e5;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .custom-card:hover .icon-wrapper {
+            transform: rotate(5deg) scale(1.1);
+            background-color: #4f46e5;
+            color: #ffffff;
+        }
+
+        .custom-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 15px 0;
+            color: #111827;
+        }
+
+        .custom-card p {
+            font-size: 1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .custom-card-link {
+            margin-top: auto;
+            color: #4f46e5;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap 0.2s ease;
+        }
+
+        .custom-card-link:hover {
+            gap: 10px;
+        }
+
+        /* Iconos SVG */
+        .icon-svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .custom-section-header h2 {
+                font-size: 2rem;
+            }
+            .custom-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+
+    <div class="custom-section-container">
+        
+        <!-- Encabezado de la Sección -->
+        <div class="custom-section-header">
+            <h2>Lleva tu proyecto al <span>siguiente nivel</span></h2>
+            <p>Diseñamos experiencias digitales que conectan con tu audiencia. Soluciones rápidas, creativas y efectivas para tu negocio.</p>
+        </div>
+
+        <!-- Grid de Contenido -->
+        <div class="custom-cards-grid">
+            
+            <!-- Tarjeta 1 -->
+            <div class="custom-card">
+                <div class="icon-wrapper">
+                    <!-- Icono SVG: Rayo -->
+                    <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3>Velocidad Increíble</h3>
+                <p>Optimizamos cada línea de código para asegurar que tu sitio cargue al instante, mejorando el SEO y la experiencia.</p>
+                <a href="#" class="custom-card-link">Leer más &rarr;</a>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="custom-card">
+                <div class="icon-wrapper">
+                    <!-- Icono SVG: Diseño/Capas -->
+                    <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                <h3>Diseño Moderno</h3>
+                <p>Estética visual limpia y contemporánea que se adapta a cualquier dispositivo, desde móviles hasta pantallas grandes.</p>
+                <a href="#" class="custom-card-link">Ver portafolio &rarr;</a>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="custom-card">
+                <div class="icon-wrapper">
+                    <!-- Icono SVG: Seguridad -->
+                    <svg class="icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h3>Seguridad Total</h3>
+                <p>Protegemos tus datos y los de tus clientes con las mejores prácticas de seguridad y cifrado avanzado.</p>
+                <a href="#" class="custom-card-link">Saber más &rarr;</a>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- HASTA AQUÍ COPIA PARA WORDPRESS -->
+
+</body>
+</html>
